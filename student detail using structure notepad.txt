@@ -1,0 +1,30 @@
+#include<stdio.h>
+struct student
+{
+	int rno;
+	char name[50];
+	float marks;
+};
+
+int main()
+{
+	struct student stu[3];
+	
+	for(int i=0;i<3;i++)
+	{
+		
+		printf("\nENTER ROLL NUMBER = ");
+		scanf("%d",&stu[i].rno);
+		printf("\nENTER STUDENT NAME = ");
+		scanf("%s",&stu[i].name);
+		printf("\nENTER MARKS = ");
+		scanf("%f",&stu[i].marks);
+  }
+  
+  	for(int i=0;i<3;i++)
+	{
+		printf("%d) %s %.1f \n",stu[i].rno,stu[i].name,stu[i].marks);
+     }
+	return 0;
+}
+
